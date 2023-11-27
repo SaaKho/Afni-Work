@@ -15,9 +15,7 @@ License: For each use you must have a valid license purchased only from above li
   <!--begin::Head-->
   <head>
     <base href="../" />
-    <title>
-      Metronic - The World's #1 Selling Bootstrap Admin Template by Keenthemes
-    </title>
+    <title>Afni</title>
     <meta charset="utf-8" />
     <meta
       name="description"
@@ -80,6 +78,9 @@ License: For each use you must have a valid license purchased only from above li
       .submenu-item::before {
         content: "•";
         margin-right: 5px;
+      }
+      .table table-hover {
+        margin-top: 0%;
       }
     </style>
   </head>
@@ -1793,6 +1794,11 @@ License: For each use you must have a valid license purchased only from above li
           <nav
             id="sidebarMenu"
             class="col-md-2 d-md-block sidebar collapse mt-5"
+            style="
+              border-right-style: solid;
+              border-right-color: whitesmoke;
+              border-right-width: initial;
+            "
           >
             <div class="position-sticky pt-3">
               <!-- Brand Logo -->
@@ -1800,15 +1806,12 @@ License: For each use you must have a valid license purchased only from above li
                 href="home.html"
                 class="d-flex align-items-center pb-3 mb-3 link-light text-decoration-none border-bottom"
               >
-                <img
-                  src="path-to-your-logo.svg"
+                <!-- <img
+                  src="data:image/png;base64,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"
                   alt="Brand Logo"
                   width="30"
                   height="30"
-                />
-                <span class="fs-5 fw-semibold text-dark"
-                  >Afni- Admin Dashboard</span
-                >
+                /> -->
               </a>
               <ul class="nav flex-column">
                 <li class="nav-item">
@@ -1823,11 +1826,16 @@ License: For each use you must have a valid license purchased only from above li
                     <!-- <img src="path-to-your-icon.svg" class="" alt=""> -->
                     <span>
                       <span data-feather="home"></span>
+                      <span class="menu-icon"
+                        ><i class="ki-duotone ki-abstract-19 fs-2"
+                          ><span class="path1"></span
+                          ><span class="path2"></span></i
+                      ></span>
                       Candidates
                     </span>
                     <span class="right-icon">&#9662;</span>
                   </a>
-                  <div class="collapse" id="candidatesSubmenu">
+                  <div class="collapse" id="candidatesSubmenu"style="padding-left:10px;">
                     <ul
                       class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
                     >
@@ -1860,11 +1868,16 @@ License: For each use you must have a valid license purchased only from above li
                     <!-- <img src="path-to-your-icon.svg" class="" alt=""> -->
                     <span>
                       <span data-feather="home"></span>
+                      <span class="menu-icon"
+                        ><i class="ki-duotone ki-address-book fs-2"
+                          ><span class="path1"></span><span class="path2"></span
+                          ><span class="path3"></span></i
+                      ></span>
                       Requisition
                     </span>
                     <span class="right-icon">&#9662;</span>
                   </a>
-                  <div class="collapse" id="RequsitionSubmenu">
+                  <div class="collapse" id="RequsitionSubmenu" style="padding-left:10px;">
                     <ul
                       class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
                     >
@@ -1893,6 +1906,11 @@ License: For each use you must have a valid license purchased only from above li
                   >
                     <!-- <img src="/demo49/src/media/logos/demo49-dark.svg" class="" alt=""> -->
                     <span data-feather="file"></span>
+                    <span class="menu-icon"
+                      ><i class="ki-duotone ki-cube-3 fs-2"
+                        ><span class="path1"></span
+                        ><span class="path2"></span></i
+                    ></span>
                     Departments
                   </a>
                 </li>
@@ -1903,6 +1921,11 @@ License: For each use you must have a valid license purchased only from above li
                   >
                     <!-- <img src="path-to-your-icon.svg" class="" alt=""> -->
                     <span data-feather="file"></span>
+                    <span class="menu-icon"
+                      ><i class="ki-duotone ki-geolocation fs-2"
+                        ><span class="path1"></span
+                        ><span class="path2"></span></i
+                    ></span>
                     Locations
                   </a>
                 </li>
@@ -1918,11 +1941,17 @@ License: For each use you must have a valid license purchased only from above li
                     <!-- <img src="path-to-your-icon.svg" class="" alt=""> -->
                     <span>
                       <span data-feather="home"></span>
+                      <span class="menu-icon"
+                        ><i class="ki-duotone ki-element-plus fs-2"
+                          ><span class="path1"></span><span class="path2"></span
+                          ><span class="path3"></span><span class="path4"></span
+                          ><span class="path5"></span></i
+                      ></span>
                       Reports
                     </span>
                     <span class="right-icon">&#9662;</span>
                   </a>
-                  <div class="collapse" id="ReportsSubmenu">
+                  <div class="collapse" id="ReportsSubmenu" style="padding-left:10px;">
                     <ul
                       class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
                     >
@@ -1961,12 +1990,17 @@ License: For each use you must have a valid license purchased only from above li
                     <!-- <img src="path-to-your-icon.svg" class="" alt=""> -->
                     <span>
                       <span data-feather="home"></span>
+                      <span class="menu-icon"
+                        ><i class="ki-duotone ki-user fs-2"
+                          ><span class="path1"></span
+                          ><span class="path2"></span></i
+                      ></span>
                       Users
                     </span>
                     <span class="right-icon">&#9662;</span>
                     <!-- Dropdown Arrow -->
                   </a>
-                  <div class="collapse" id="UsersSubmenu">
+                  <div class="collapse" id="UsersSubmenu" style="padding-left:10px;">
                     <ul
                       class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
                     >
@@ -1994,11 +2028,17 @@ License: For each use you must have a valid license purchased only from above li
           <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
             <div class="container my-4">
               <div class="mb-4">
-                <h1>Locations</h1>
+                <h1 style="font-size: medium">Locations</h1>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">
+                    <li class="breadcrumb-item" style="font-size: smaller">
+                      <a href="#">Home</a>
+                    </li>
+                    <li
+                      style="font-size: smaller"
+                      class="breadcrumb-item active"
+                      aria-current="page"
+                    >
                       Locations
                     </li>
                   </ol>
@@ -2007,31 +2047,33 @@ License: For each use you must have a valid license purchased only from above li
             </div>
             <div class="card">
               <div class="card-header d-flex align-items-center">
-                <h4>Locations Listing</h4>
-                <button type="button" class="btn btn-primary float-end">
+                <h6>Locations Listing</h6>
+                <button type="button" class="btn btn-primary float-end btn-sm">
                   + Add
                 </button>
               </div>
-              <div class="card-body">
+              <div class="card-body ">
                 <table class="table table-hover">
                   <thead>
                     <tr>
                       <th
+                        class="text-start min-w-130px sorting_disabled fw-bold text-gray-400"
                         scope="col"
-                        style="font-weight: bold; font-size: 14px"
+                        style="width: 130px"
                       >
                         LOCATION ID
                       </th>
                       <th
+                        class="text-start min-w-130px sorting_disabled fw-bold text-gray-400"
                         scope="col"
-                        style="font-weight: bold; font-size: 14px"
+                        style="width: 130px"
                       >
                         LOCATION
                       </th>
                       <th
+                        class="text-end min-w-130px sorting_disabled fw-bold text-gray-400"
                         scope="col"
-                        style="font-weight: bold; font-size: 14px"
-                        class="text-end"
+                        style="width: 130px"
                       >
                         ACTIONS
                       </th>
@@ -2051,7 +2093,7 @@ License: For each use you must have a valid license purchased only from above li
                       <td class="text-end">
                         <div class="dropdown">
                           <button
-                            class="btn btn-primary dropdown-toggle"
+                            class="btn btn-primary dropdown-toggle btn-sm"
                             type="button"
                             id="actionMenuButton1"
                             data-bs-toggle="dropdown"
@@ -2086,7 +2128,7 @@ License: For each use you must have a valid license purchased only from above li
                         <div class="btn-group">
                           <button
                             type="button"
-                            class="btn btn-primary dropdown-toggle"
+                            class="btn btn-primary dropdown-toggle btn-sm"
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                           >
@@ -2118,7 +2160,7 @@ License: For each use you must have a valid license purchased only from above li
                         <div class="btn-group">
                           <button
                             type="button"
-                            class="btn btn-primary dropdown-toggle"
+                            class="btn btn-primary dropdown-toggle btn-sm"
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                           >
@@ -2150,7 +2192,7 @@ License: For each use you must have a valid license purchased only from above li
                         <div class="btn-group">
                           <button
                             type="button"
-                            class="btn btn-primary dropdown-toggle"
+                            class="btn btn-primary dropdown-toggle btn-sm"
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                           >
@@ -2182,7 +2224,7 @@ License: For each use you must have a valid license purchased only from above li
                         <div class="btn-group">
                           <button
                             type="button"
-                            class="btn btn-primary dropdown-toggle"
+                            class="btn btn-primary dropdown-toggle btn-sm"
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                           >
@@ -2214,7 +2256,7 @@ License: For each use you must have a valid license purchased only from above li
                         <div class="btn-group">
                           <button
                             type="button"
-                            class="btn btn-primary dropdown-toggle"
+                            class="btn btn-primary dropdown-toggle btn-sm"
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                           >

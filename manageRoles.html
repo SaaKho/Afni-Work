@@ -15,9 +15,7 @@ License: For each use you must have a valid license purchased only from above li
   <!--begin::Head-->
   <head>
     <base href="../" />
-    <title>
-      Metronic - The World's #1 Selling Bootstrap Admin Template by Keenthemes
-    </title>
+    <title>Afni</title>
     <meta charset="utf-8" />
     <meta
       name="description"
@@ -63,6 +61,8 @@ License: For each use you must have a valid license purchased only from above li
       type="text/css"
     />
     <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
+
     <!--end::Global Stylesheets Bundle-->
     <script>
       // Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }
@@ -78,7 +78,7 @@ License: For each use you must have a valid license purchased only from above li
         padding-bottom: 10px;
       }
       tbody td {
-        text-align: center;
+        text-align: left;
       }
       .submenu-item::before {
         content: "•";
@@ -1796,6 +1796,11 @@ License: For each use you must have a valid license purchased only from above li
           <nav
             id="sidebarMenu"
             class="col-md-2 d-md-block sidebar collapse mt-5"
+            style="
+              border-right-style: solid;
+              border-right-color: whitesmoke;
+              border-right-width: initial;
+            "
           >
             <div class="position-sticky pt-3">
               <!-- Brand Logo -->
@@ -1803,13 +1808,12 @@ License: For each use you must have a valid license purchased only from above li
                 href="home.html"
                 class="d-flex align-items-center pb-3 mb-3 text-decoration-none border-bottom text-dark"
               >
-                <img
+                <!-- <img
                   src="C:\Users\hp\OneDrive\Desktop\afnilogo.png"
                   alt="Brand Logo"
                   width="30"
                   height="30"
-                />
-                <span class="fs-5 fw-bold text-dark">Admin Dashboard</span>
+                /> -->
               </a>
               <ul class="nav flex-column">
                 <li class="nav-item">
@@ -1824,11 +1828,20 @@ License: For each use you must have a valid license purchased only from above li
                     <!-- <img src="path-to-your-icon.svg" class="" alt=""> -->
                     <span>
                       <span data-feather="home"></span>
+                      <span class="menu-icon"
+                        ><i class="ki-duotone ki-abstract-19 fs-2"
+                          ><span class="path1"></span
+                          ><span class="path2"></span></i
+                      ></span>
                       Candidates
                     </span>
                     <span class="right-icon">&#9662;</span>
                   </a>
-                  <div class="collapse" id="candidatesSubmenu">
+                  <div
+                    class="collapse"
+                    id="candidatesSubmenu"
+                    style="padding-left: 10px"
+                  >
                     <ul
                       class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
                     >
@@ -1861,11 +1874,20 @@ License: For each use you must have a valid license purchased only from above li
                     <!-- <img src="path-to-your-icon.svg" class="" alt=""> -->
                     <span>
                       <span data-feather="home"></span>
+                      <span class="menu-icon"
+                        ><i class="ki-duotone ki-address-book fs-2"
+                          ><span class="path1"></span><span class="path2"></span
+                          ><span class="path3"></span></i
+                      ></span>
                       Requisition
                     </span>
                     <span class="right-icon">&#9662;</span>
                   </a>
-                  <div class="collapse" id="RequsitionSubmenu">
+                  <div
+                    class="collapse"
+                    id="RequsitionSubmenu"
+                    style="padding-left: 10px"
+                  >
                     <ul
                       class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
                     >
@@ -1894,6 +1916,11 @@ License: For each use you must have a valid license purchased only from above li
                   >
                     <!-- <img src="/demo49/src/media/logos/demo49-dark.svg" class="" alt=""> -->
                     <span data-feather="file"></span>
+                    <span class="menu-icon"
+                      ><i class="ki-duotone ki-cube-3 fs-2"
+                        ><span class="path1"></span
+                        ><span class="path2"></span></i
+                    ></span>
                     Departments
                   </a>
                 </li>
@@ -1904,6 +1931,11 @@ License: For each use you must have a valid license purchased only from above li
                   >
                     <!-- <img src="path-to-your-icon.svg" class="" alt=""> -->
                     <span data-feather="file"></span>
+                    <span class="menu-icon"
+                      ><i class="ki-duotone ki-geolocation fs-2"
+                        ><span class="path1"></span
+                        ><span class="path2"></span></i
+                    ></span>
                     Locations
                   </a>
                 </li>
@@ -1919,11 +1951,21 @@ License: For each use you must have a valid license purchased only from above li
                     <!-- <img src="path-to-your-icon.svg" class="" alt=""> -->
                     <span>
                       <span data-feather="home"></span>
+                      <span class="menu-icon"
+                        ><i class="ki-duotone ki-element-plus fs-2"
+                          ><span class="path1"></span><span class="path2"></span
+                          ><span class="path3"></span><span class="path4"></span
+                          ><span class="path5"></span></i
+                      ></span>
                       Reports
                     </span>
                     <span class="right-icon">&#9662;</span>
                   </a>
-                  <div class="collapse" id="ReportsSubmenu">
+                  <div
+                    class="collapse"
+                    id="ReportsSubmenu"
+                    style="padding-left: 10px"
+                  >
                     <ul
                       class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
                     >
@@ -1962,12 +2004,21 @@ License: For each use you must have a valid license purchased only from above li
                     <!-- <img src="path-to-your-icon.svg" class="" alt=""> -->
                     <span>
                       <span data-feather="home"></span>
+                      <span class="menu-icon"
+                        ><i class="ki-duotone ki-user fs-2"
+                          ><span class="path1"></span
+                          ><span class="path2"></span></i
+                      ></span>
                       Users
                     </span>
                     <span class="right-icon">&#9662;</span>
                     <!-- Dropdown Arrow -->
                   </a>
-                  <div class="collapse" id="UsersSubmenu">
+                  <div
+                    class="collapse"
+                    id="UsersSubmenu"
+                    style="padding-left: 10px"
+                  >
                     <ul
                       class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
                     >
@@ -1996,11 +2047,17 @@ License: For each use you must have a valid license purchased only from above li
           <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
             <div class="container my-4">
               <div class="mb-4">
-                <h1>Manage Roles</h1>
+                <h1 style="font-size: medium">Manage Roles</h1>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">
+                    <li class="breadcrumb-item" style="font-size: smaller">
+                      <a href="#">Home</a>
+                    </li>
+                    <li
+                      style="font-size: smaller"
+                      class="breadcrumb-item active"
+                      aria-current="page"
+                    >
                       Manage Roles
                     </li>
                   </ol>
@@ -2020,9 +2077,9 @@ License: For each use you must have a valid license purchased only from above li
                 </div>
               </div>
             </div>
-            <div class="table-responsive">
+            <div class="card-body">
               <table class="table table-hover">
-                <thead style="width: 100%; text-align: center; margin: 20px 0">
+                <thead style="width: 100%; text-align: left; margin: 20px 0">
                   <th
                     scope="col"
                     style="width: 25%; font-weight: bold; font-size: 14px"
@@ -2043,6 +2100,7 @@ License: For each use you must have a valid license purchased only from above li
                   </th>
                   <th
                     scope="col"
+                    class="text-end"
                     style="width: 25%; font-weight: bold; font-size: 14px"
                   >
                     Actions
@@ -2062,10 +2120,10 @@ License: For each use you must have a valid license purchased only from above li
                     </td>
                     <td>Afni</td>
                     <td>Super Admin</td>
-                    <td>
+                    <td class="text-end">
                       <div class="dropdown">
                         <button
-                          class="btn btn-primary dropdown-toggle"
+                          class="btn btn-primary btn-sm dropdown-toggle"
                           type="button"
                           id="actionMenuButton1"
                           data-bs-toggle="dropdown"
@@ -2098,10 +2156,10 @@ License: For each use you must have a valid license purchased only from above li
                     </td>
                     <td>Peter</td>
                     <td>Admin</td>
-                    <td>
+                    <td class="text-end">
                       <div class="dropdown">
                         <button
-                          class="btn btn-primary dropdown-toggle"
+                          class="btn btn-primary btn-sm dropdown-toggle"
                           type="button"
                           id="actionMenuButton1"
                           data-bs-toggle="dropdown"
@@ -2134,10 +2192,10 @@ License: For each use you must have a valid license purchased only from above li
                     </td>
                     <td>Lana</td>
                     <td>HR</td>
-                    <td>
+                    <td class="text-end">
                       <div class="dropdown">
                         <button
-                          class="btn btn-primary dropdown-toggle"
+                          class="btn btn-primary btn-sm dropdown-toggle"
                           type="button"
                           id="actionMenuButton1"
                           data-bs-toggle="dropdown"
@@ -2170,10 +2228,10 @@ License: For each use you must have a valid license purchased only from above li
                     </td>
                     <td>Kate</td>
                     <td>Candidate</td>
-                    <td>
+                    <td class="text-end">
                       <div class="dropdown">
                         <button
-                          class="btn btn-primary dropdown-toggle"
+                          class="btn btn-primary btn-sm dropdown-toggle"
                           type="button"
                           id="actionMenuButton1"
                           data-bs-toggle="dropdown"
@@ -2206,10 +2264,10 @@ License: For each use you must have a valid license purchased only from above li
                     </td>
                     <td>John</td>
                     <td>Super Admin</td>
-                    <td>
+                    <td class="text-end">
                       <div class="dropdown">
                         <button
-                          class="btn btn-primary dropdown-toggle"
+                          class="btn btn-primary btn-sm dropdown-toggle"
                           type="button"
                           id="actionMenuButton1"
                           data-bs-toggle="dropdown"
@@ -2242,10 +2300,10 @@ License: For each use you must have a valid license purchased only from above li
                     </td>
                     <td>Megan</td>
                     <td>Candidate</td>
-                    <td>
+                    <td class="text-end">
                       <div class="dropdown">
                         <button
-                          class="btn btn-primary dropdown-toggle"
+                          class="btn btn-primary btn-sm dropdown-toggle"
                           type="button"
                           id="actionMenuButton1"
                           data-bs-toggle="dropdown"
@@ -2268,6 +2326,34 @@ License: For each use you must have a valid license purchased only from above li
                   </tr>
                 </tbody>
               </table>
+              <div class="card-footer">
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item active">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
             </div>
           </main>
           <!--begin::aside-->

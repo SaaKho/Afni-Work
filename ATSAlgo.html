@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATS Score Formula</title>
+    <!-- Include Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2>ATS Score Formula</h2>
+      <p>An amalgam of 5 parameters</p>
+
+      <form>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Attributes</th>
+              <th scope="col">Weights</th>
+              <th scope="col">4</th>
+              <th scope="col">3</th>
+              <th scope="col">2</th>
+              <th scope="col">1</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">BPO Tenure</th>
+              <td>30%</td>
+              <td>12-24</td>
+              <td>25-36</td>
+              <td>37 and Above</td>
+              <td>0 - 11</td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-outline-danger btn-sm rounded-circle"
+                >
+                  &minus;
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">ERP</th>
+              <td>40%</td>
+              <td>1</td>
+              <td>0</td>
+              <td></td>
+              <td></td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-outline-danger btn-sm rounded-circle"
+                >
+                  &minus;
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Age Bucket</th>
+              <td>5%</td>
+              <td>22-32</td>
+              <td>21 and Below</td>
+              <td>33-42</td>
+              <td>43 & Above</td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-outline-danger btn-sm rounded-circle"
+                >
+                  &minus;
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Location</th>
+              <td>10%</td>
+              <td>D</td>
+              <td>C</td>
+              <td>B</td>
+              <td>A</td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-outline-danger btn-sm rounded-circle"
+                >
+                  &minus;
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">SHL Score</th>
+              <td>15%</td>
+              <td>51-100</td>
+              <td>31-50</td>
+              <td>21-30</td>
+              <td>0-20</td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-outline-danger btn-sm rounded-circle"
+                >
+                  &minus;
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Total</th>
+              <td>100%</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary btn-sm rounded-circle"
+                >
+                  &plus;
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="form-group row">
+          <div class="col-sm-12 text-right">
+            <!-- Adjusted for right alignment -->
+            <button type="button" class="btn btn-outline-secondary">
+              Back
+            </button>
+            <button type="button" class="btn btn-danger">Cancel</button>
+            <button type="submit" class="btn btn-primary">Save</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Include Bootstrap JS and its dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

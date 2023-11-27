@@ -1,22 +1,11 @@
+C:\Users\hp\OneDrive\Desktop\New_Effort\metronic_html_v8.2.0_demo49\demo49\dist\dashboards\requisition.html
 <!DOCTYPE html>
-<!--
-Author: Keenthemes
-Product Name: Metronic
-Product Version: 8.2.0
-Purchase: https://1.envato.market/EA4JP
-Website: http://www.keenthemes.com
-Contact: support@keenthemes.com
-Follow: www.twitter.com/keenthemes
-Dribbble: www.dribbble.com/keenthemes
-Like: www.facebook.com/keenthemes
-License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
--->
 <html lang="en">
   <!--begin::Head-->
   <head>
     <base href="../" />
     <title>
-      Metronic - The World's #1 Selling Bootstrap Admin Template by Keenthemes
+      Afni
     </title>
     <meta charset="utf-8" />
     <meta
@@ -81,6 +70,57 @@ License: For each use you must have a valid license purchased only from above li
         content: "•";
         margin-right: 5px;
       }
+      
+      table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    thead {
+      /* background-color: #3498db; */
+      color: gray;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tbody tr:hover {
+      background-color: #e0e0e0;
+    }
+
+    .active {
+      color: #27ae60;
+      font-weight: bold;
+    }
+
+    .closed {
+      color: #e74c3c;
+      font-weight: bold;
+    }
+    .card-body {
+    padding: 0; /* Adjust padding to ensure alignment */
+}
+
+#kt_table_widget_4_table_wrapper .table-responsive {
+    margin: 0; /* Adjust margin to align the table with the search bar */
+}
+
+#kt_table_widget_4_table {
+    width: 100%; /* This ensures the table stretches to the full width of its container */
+}
+
     </style>
   </head>
   <!--end::Head-->
@@ -1792,22 +1832,18 @@ License: For each use you must have a valid license purchased only from above li
           <nav
             id="sidebarMenu"
             class="col-md-2 d-md-block sidebar collapse mt-5"
+            style="    border-right-style: solid;
+            border-right-color: whitesmoke;
+            border-right-width: initial;"
           >
             <div class="position-sticky pt-3">
+              <div>
               <!-- Brand Logo -->
               <a
                 href="home.html"
                 class="d-flex align-items-center pb-3 mb-3 link-light text-decoration-none border-bottom"
               >
-                <img
-                  src="path-to-your-logo.svg"
-                  alt="Brand Logo"
-                  width="30"
-                  height="30"
-                />
-                <span class="fs-5 fw-semibold text-dark"
-                  >Afni- Admin Dashboard</span
-                >
+                
               </a>
               <ul class="nav flex-column">
                 <li class="nav-item">
@@ -1819,24 +1855,25 @@ License: For each use you must have a valid license purchased only from above li
                     aria-expanded="false"
                     aria-controls="candidatesSubmenu"
                   >
-                    <!-- <img src="path-to-your-icon.svg" class="" alt=""> -->
                     <span>
                       <span data-feather="home"></span>
+                      <span class="menu-icon"><i class="ki-duotone ki-abstract-19 fs-2"><span class="path1"></span><span class="path2"></span></i></span>
                       Candidates
                     </span>
                     <span class="right-icon">&#9662;</span>
                   </a>
-                  <div class="collapse" id="candidatesSubmenu">
-                    <ul
-                      class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
-                    >
-                      <li>
+                  
+                    <div class="collapse" style="padding-left:10px;" id="candidatesSubmenu">
+                      <ul
+                       class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
+                      >
+                       <li>
                         <a
                           href="dashboards/candidates.html"
                           class="nav-link text-dark submenu-item"
                           >View All</a
                         >
-                      </li>
+                        </li>
                       <li>
                         <a
                           href="dashboards/candidates.html"
@@ -1844,7 +1881,7 @@ License: For each use you must have a valid license purchased only from above li
                           >New Candidate</a
                         >
                       </li>
-                    </ul>
+                      </ul>
                   </div>
                 </li>
                 <li class="nav-item">
@@ -1859,11 +1896,12 @@ License: For each use you must have a valid license purchased only from above li
                     <!-- <img src="path-to-your-icon.svg" class="" alt=""> -->
                     <span>
                       <span data-feather="home"></span>
+                      <span class="menu-icon"><i class="ki-duotone ki-address-book fs-2"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i></span>
                       Requisition
                     </span>
                     <span class="right-icon">&#9662;</span>
                   </a>
-                  <div class="collapse" id="RequsitionSubmenu">
+                  <div class="collapse" style="padding-left:10px;" id="RequsitionSubmenu">
                     <ul
                       class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
                     >
@@ -1892,6 +1930,7 @@ License: For each use you must have a valid license purchased only from above li
                   >
                     <!-- <img src="/demo49/src/media/logos/demo49-dark.svg" class="" alt=""> -->
                     <span data-feather="file"></span>
+                    <span class="menu-icon"><i class="ki-duotone ki-cube-3 fs-2"><span class="path1"></span><span class="path2"></span></i></span>
                     Departments
                   </a>
                 </li>
@@ -1902,6 +1941,7 @@ License: For each use you must have a valid license purchased only from above li
                   >
                     <!-- <img src="path-to-your-icon.svg" class="" alt=""> -->
                     <span data-feather="file"></span>
+                    <span class="menu-icon"><i class="ki-duotone ki-geolocation fs-2"><span class="path1"></span><span class="path2"></span></i></span>
                     Locations
                   </a>
                 </li>
@@ -1917,11 +1957,12 @@ License: For each use you must have a valid license purchased only from above li
                     <!-- <img src="path-to-your-icon.svg" class="" alt=""> -->
                     <span>
                       <span data-feather="home"></span>
+                      <span class="menu-icon"><i class="ki-duotone ki-element-plus fs-2"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></i></span>
                       Reports
                     </span>
                     <span class="right-icon">&#9662;</span>
                   </a>
-                  <div class="collapse" id="ReportsSubmenu">
+                  <div class="collapse" style="padding-left:10px;" id="ReportsSubmenu">
                     <ul
                       class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
                     >
@@ -1960,12 +2001,13 @@ License: For each use you must have a valid license purchased only from above li
                     <!-- <img src="path-to-your-icon.svg" class="" alt=""> -->
                     <span>
                       <span data-feather="home"></span>
+                      <span class="menu-icon"><i class="ki-duotone ki-user fs-2"><span class="path1"></span><span class="path2"></span></i></span>
                       Users
                     </span>
                     <span class="right-icon">&#9662;</span>
                     <!-- Dropdown Arrow -->
                   </a>
-                  <div class="collapse" id="UsersSubmenu">
+                  <div class="collapse" style="padding-left:10px;" id="UsersSubmenu">
                     <ul
                       class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
                     >
@@ -1988,24 +2030,25 @@ License: For each use you must have a valid license purchased only from above li
                 </li>
               </ul>
             </div>
+            </div>
           </nav>
           <!-- Main Content -->
           <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
             <div class="container my-4">
-              <div class="mb-4">
-                <h1>New Requisition</h1>
+              <div class="mb-1">
+                <h1 style="font-size:medium;"> View All Requisition  </h1>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">
+                    <li class="breadcrumb-item" style="font-size: smaller;"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active"style="font-size: smaller;" aria-current="page">
                       View All Requisitions
                     </li>
                   </ol>
                 </nav>
               </div>
               <div class="card">
-                <div class="card-body">
-                  <div class="row g-3 mb-4">
+                <div class="card-body" style="margin-top: -10px;">
+                  <div class="row g-3 mb-3">
                     <div class="col">
                       <div class="input-group">
                         <span class="input-group-text border-0">
@@ -2029,48 +2072,391 @@ License: For each use you must have a valid license purchased only from above li
                       <button class="btn btn-primary">Filter</button>
                     </div>
                   </div>
-                  <table class="table table-hover">
-                    <thead>
-                      <tr>
-                        <th>ID</th>
-                        <th>REQUISITION TITLE</th>
-                        <th>REQUISITION TYPE</th>
-                        <th>SKILL TYPE</th>
-                        <th>DATE ADDED</th>
-                        <th>DATE MODIFIED</th>
-                        <th>AC</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td>Front-end Developer</td>
-                        <td>Full-time</td>
-                        <td>JavaScript</td>
-                        <td>2023-01-01</td>
-                        <td>2023-01-05</td>
-                        <td>Active</td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>Back-end Developer</td>
-                        <td>Part-time</td>
-                        <td>Python</td>
-                        <td>2023-02-01</td>
-                        <td>2023-02-05</td>
-                        <td>Active</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>Project Manager</td>
-                        <td>Contract</td>
-                        <td>Management</td>
-                        <td>2023-03-01</td>
-                        <td>2023-03-05</td>
-                        <td>Closed</td>
-                      </tr>
-                    </tbody>
-                  </table>
+
+                  <div class="card card-header w-100">
+                    <div class="card-body pt-1">
+                      <!--begin::Table-->
+                      <div id="kt_table_widget_4_table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                        <div class="table-responsive" style="margin-left: 0; margin-right: 0;">
+                          <table class="table align-middle table-row-dashed fs-6 gy-3 dataTable no-footer" id="kt_table_widget_4_table" style="width: 100%;">
+                        <!--begin::Table head-->
+                        <thead>
+                          <!--begin::Table row-->
+                          <tr class="text-start text-white-400 fw-bold fs-7 text-uppercase gs-0">
+                            <th class="text-start min-w-100px sorting_disabled" rowspan="1" colspan="1" style="width: 5%;">ID</th>
+                            <th class="text-start min-w-100px sorting_disabled" rowspan="1" colspan="1" style="width: 130px;">Requisition Title</th>
+                            <th class="text-start min-w-125px sorting_disabled" rowspan="1" colspan="1" style="width: 125px;">Requisition Type</th>
+                            <th class="text-start min-w-100px sorting_disabled" rowspan="1" colspan="1" style="width: 100px;">ATS Score</th>
+                            <th class="text-start min-w-100px sorting_disabled" rowspan="1" colspan="1" style="width: 100px;">Date Added</th>
+                            <th class="text-start min-w-50px sorting_disabled" rowspan="1" colspan="1" style="width: 89.1771px;">Date Modified</th>
+                            <th class="text-start sorting_disabled text-start" rowspan="1" colspan="1" style="width: 5%;">Action</th></tr>
+                          <!--end::Table row-->
+                        </thead>
+                        <!--end::Table head-->
+                        <!--begin::Table body-->
+                        <tbody class="fw-normal text-dark">
+                        <tr class="odd">
+                          <td>
+                            1
+                          </td>
+  
+                            <td class="text-start">Developer</td>
+                            <td class="text-start">
+                              <!-- <a href="#" class="text-gray-600 text-hover-primary">Full-time</a> -->
+                              <span class="badge rounded-pill bg-info text-white">Full-Time</span>
+                            </td>
+                            <td class="text-start">JavaScript</td>
+                            <td class="text-start">
+                              <span class="fw-normal text-dark">2023-01-01</span>
+                            </td>
+                            <td class="text-start">
+                              <span class="fw-normal text-dark">2023-01-05</span>
+                            </td>
+                            <td class="text-start">
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-primary btn-sm dropdown-toggle"
+                                  type="button"
+                                  id="actionMenuButton1"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  Actions
+                                </button>
+                                <ul
+                                  class="dropdown-menu"
+                                  aria-labelledby="actionMenuButton1"
+                                >
+                                  <li><a class="dropdown-item" href="#">View</a></li>
+                                  <li><a class="dropdown-item" href="#">Edit</a></li>
+                                  <li><a class="dropdown-item" href="#">Delete</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="even">
+                            <td>
+                              2
+                            </td>
+                            <td class="text-start">BPO</td>
+                            <td class="text-start">
+                              <!-- <a href="#" class="text-gray-600 text-hover-primary">Part-time</a> -->
+                              <span class="badge rounded-pill bg-primary text-white">Part-Time</span>
+                            </td>
+                            <td class="text-start">Python</td>
+                            <td class="text-start">
+                              <span class="fw-normal text-dark">2023-02-01</span>
+                            </td>
+                            <td class="text-start">
+                              <span class="fw-normal text-dark">2023-02-05</span>
+                            </td>
+                            <td class="text-start">
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-primary btn-sm dropdown-toggle"
+                                  type="button"
+                                  id="actionMenuButton1"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  Actions
+                                </button>
+                                <ul
+                                  class="dropdown-menu"
+                                  aria-labelledby="actionMenuButton1"
+                                >
+                                  <li><a class="dropdown-item" href="#">View</a></li>
+                                  <li><a class="dropdown-item" href="#">Edit</a></li>
+                                  <li><a class="dropdown-item" href="#">Delete</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                            
+                          </tr>
+                          <tr class="odd">
+                            <td>
+                              3
+                            </td>
+                            <td class="text-start">Call Center</td>
+                            <td class="text-start">
+                              <!-- <a href="#" class="text-gray-600 text-hover-primary">Contract</a> -->
+                              <span class="badge rounded-pill bg-info text-white">Full-Time</span>
+  
+                            </td>
+                            <td class="text-start">Management</td>
+                            <td class="text-start">
+                              <span class="fw-normal text-dark">2023-03-01</span>
+                            </td>
+                            <td class="text-start">
+                              <span class="fw-normal text-dark">2023-03-05</span>
+                            </td>
+                            <td class="text-start">
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-primary btn-sm dropdown-toggle"
+                                  type="button"
+                                  id="actionMenuButton1"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  Actions
+                                </button>
+                                <ul
+                                  class="dropdown-menu"
+                                  aria-labelledby="actionMenuButton1"
+                                >
+                                  <li><a class="dropdown-item" href="#">View</a></li>
+                                  <li><a class="dropdown-item" href="#">Edit</a></li>
+                                  <li><a class="dropdown-item" href="#">Delete</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr><tr class="even">
+                            <td>
+                              4
+                            </td>
+                            <td class="text-start">CEO</td>
+                            <td class="text-start">
+                              <!-- <a href="#" class="text-gray-600 text-hover-primary">Full-time</a> -->
+                              <span class="badge rounded-pill bg-info text-white">Full-Time</span>
+  
+                            </td>
+                            <td class="text-start">JavaScript</td>
+                            <td class="text-start">
+                              <span class="fw-normal text-dark">2023-01-01</span>
+                            </td>
+                            <td class="text-start">
+                              <span class="fw-normal text-dark">2023-01-05</span>
+                            </td>
+                            <td class="text-start">
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-primary btn-sm dropdown-toggle"
+                                  type="button"
+                                  id="actionMenuButton1"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  Actions
+                                </button>
+                                <ul
+                                  class="dropdown-menu"
+                                  aria-labelledby="actionMenuButton1"
+                                >
+                                  <li><a class="dropdown-item" href="#">View</a></li>
+                                  <li><a class="dropdown-item" href="#">Edit</a></li>
+                                  <li><a class="dropdown-item" href="#">Delete</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr><tr class="odd">
+                            <td>
+                              5
+                            </td>
+                            <td class="text-start">HRM</td>
+                            <td class="text-start">
+                              <!-- <a href="#" class="text-gray-600 text-hover-primary">Full-time</a> -->
+                              <span class="badge rounded-pill bg-primary text-white">Part-Time</span>
+                            </td>
+                            <td class="text-start">JavaScript</td>
+                            <td class="text-start">
+                              <span class="fw-normal text-dark">2023-01-01</span>
+                            </td>
+                            <td class="text-start">
+                              <span class="fw-normal text-dark">2023-01-05</span>
+                            </td>
+                            <td class="text-start">
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-primary btn-sm dropdown-toggle"
+                                  type="button"
+                                  id="actionMenuButton1"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  Actions
+                                </button>
+                                <ul
+                                  class="dropdown-menu"
+                                  aria-labelledby="actionMenuButton1"
+                                >
+                                  <li><a class="dropdown-item" href="#">View</a></li>
+                                  <li><a class="dropdown-item" href="#">Edit</a></li>
+                                  <li><a class="dropdown-item" href="#">Delete</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr><tr class="even">
+                            <td>
+                              6
+                            </td>
+                            <td class="text-start">Email Support</td>
+                            <td class="text-start">
+                              <span class="badge rounded-pill bg-info text-white">Full-Time</span>
+                            </td>
+                            <td class="text-start">JavaScript</td>
+                            <td class="text-start">
+                              <span class="fw-normal text-dark">2023-01-01</span>
+                            </td>
+                            <td class="text-start">
+                              <span class="fw-normal text-dark">2023-01-05</span>
+                            </td>
+                            <td class="text-start">
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-primary btn-sm dropdown-toggle"
+                                  type="button"
+                                  id="actionMenuButton1"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  Actions
+                                </button>
+                                <ul
+                                  class="dropdown-menu"
+                                  aria-labelledby="actionMenuButton1"
+                                >
+                                  <li><a class="dropdown-item" href="#">View</a></li>
+                                  <li><a class="dropdown-item" href="#">Edit</a></li>
+                                  <li><a class="dropdown-item" href="#">Delete</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr><tr class="odd">
+                            <td>
+                              7
+                            </td>
+                            <td class="text-start">Chat Support</td>
+                            <td class="text-start">
+                              <!-- <a href="#" class="text-gray-600 text-hover-primary">Full-time</a> -->
+                              <span class="badge rounded-pill bg-primary text-white">Part-Time</span>
+                            </td>
+                            <td class="text-start">JavaScript</td>
+                            <td class="text-start">
+                              <span class="fw-normal text-dark">2023-01-01</span>
+                            </td>
+                            <td class="text-start">
+                              <span class="fw-normal text-dark">2023-01-05</span>
+                            </td>
+                            <td class="text-start">
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-primary btn-sm dropdown-toggle"
+                                  type="button"
+                                  id="actionMenuButton1"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  Actions
+                                </button>
+                                <ul
+                                  class="dropdown-menu"
+                                  aria-labelledby="actionMenuButton1"
+                                >
+                                  <li><a class="dropdown-item" href="#">View</a></li>
+                                  <li><a class="dropdown-item" href="#">Edit</a></li>
+                                  <li><a class="dropdown-item" href="#">Delete</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="odd">
+                            <td>
+                              8
+                            </td>
+    
+                              <td class="text-start">Developer</td>
+                              <td class="text-start">
+                                <!-- <a href="#" class="text-gray-600 text-hover-primary">Full-time</a> -->
+                                <span class="badge rounded-pill bg-info text-white">Full-Time</span>
+                              </td>
+                              <td class="text-start">JavaScript</td>
+                              <td class="text-start">
+                                <span class="fw-normal text-dark">2023-01-01</span>
+                              </td>
+                              <td class="text-start">
+                                <span class="fw-normal text-dark">2023-01-05</span>
+                              </td>
+                              <td class="text-start">
+                                <div class="dropdown">
+                                  <button
+                                    class="btn btn-primary btn-sm dropdown-toggle"
+                                    type="button"
+                                    id="actionMenuButton1"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    Actions
+                                  </button>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="actionMenuButton1"
+                                  >
+                                    <li><a class="dropdown-item" href="#">View</a></li>
+                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr class="even">
+                              <td>
+                                9
+                              </td>
+                              <td class="text-start">BPO</td>
+                              <td class="text-start">
+                                <!-- <a href="#" class="text-gray-600 text-hover-primary">Part-time</a> -->
+                                <span class="badge rounded-pill bg-primary text-white">Part-Time</span>
+                              </td>
+                              <td class="text-start">Python</td>
+                              <td class="text-start">
+                                <span class="fw-normal text-dark">2023-02-01</span>
+                              </td>
+                              <td class="text-start">
+                                <span class="fw-normal text-dark">2023-02-05</span>
+                              </td>
+                              <td class="text-start">
+                                <!-- <span class="badge py-3 px-4 fs-7 badge-light-primary">Active</span> -->
+                                <!-- <button type="button" class="btn btn-primary btn-sm">View</button> -->
+                                <div class="dropdown">
+                                  <button
+                                    class="btn btn-primary btn-sm dropdown-toggle"
+                                    type="button"
+                                    id="actionMenuButton1"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    Actions
+                                  </button>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="actionMenuButton1"
+                                  >
+                                    <li><a class="dropdown-item" href="#">View</a></li>
+                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                              
+                            </tr>
+                        </tbody>
+                        <!--end::Table body-->
+                      </table>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start">
+                      </div>
+                      <div class="col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end">
+
+                      </div>
+                    </div>
+                  </div>
+                      <!--end::Table-->
+                    </div>
+                  </div>
+                  
+                  <div class="pagination">
                   <nav aria-label="Page navigation example">
                     <ul class="pagination justify-content-center">
                       <li class="page-item">
@@ -2109,6 +2495,7 @@ License: For each use you must have a valid license purchased only from above li
                       </li>
                     </ul>
                   </nav>
+                </div>
                 </div>
               </div>
             </div>
